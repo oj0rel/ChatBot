@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 Chatbot com IA (Next.js)
 
-## Getting Started
+![Banner do Projeto](./src/assets/print-chatbot.png)
 
-First, run the development server:
+## 📖 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este é um projeto de **Chatbot de Inteligência Artificial** desenvolvido com [Next.js](https://nextjs.org) (App Router). A aplicação oferece uma interface conversacional moderna e fluida, permitindo que usuários interajam com modelos de linguagem (LLMs) em tempo real.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O objetivo deste projeto foi explorar o desenvolvimento web moderno, manipulação de dados em tempo real (streaming) e integração de APIs de IA utilizando as melhores práticas do ecossistema React.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ✨ Funcionalidades Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Interface Moderna:** UI limpa e responsiva construída com Tailwind CSS.
+* **Respostas em Tempo Real:** Streaming de texto para uma experiência de chat dinâmica.
+* **Histórico de Conversa:** Mantém o contexto das mensagens (se implementado).
+* **Design Responsivo:** Funciona perfeitamente em desktop e dispositivos móveis.
+* **Modo Escuro/Claro:** Suporte a temas (opcional).
 
-## Learn More
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+* **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+* **Linguagem:** TypeScript
+* **Estilização:** Tailwind CSS
+* **Ícones:** Lucide React / React Icons
+* **Integração IA:** Gemini
+* **Deploy:** Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Como Rodar o Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Siga os passos abaixo para rodar a aplicação no seu ambiente local.
 
-## Deploy on Vercel
+### Pré-requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Certifique-se de ter instalado:
+* [Node.js](https://nodejs.org/) (versão 18 ou superior)
+* Gerenciador de pacotes (npm, yarn, pnpm ou bun)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Instalação Passo a Passo
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/oj0rel/ChatBot.git](https://github.com/oj0rel/ChatBot.git)
+    cd ChatBot
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+3.  **Configure as Variáveis de Ambiente:**
+    Crie um arquivo `.env.local` na raiz do projeto e adicione suas chaves de API. Use o exemplo abaixo:
+
+    ```env
+    # Exemplo (ajuste conforme a API que você utilizou)
+    OPENAI_API_KEY=sua-chave-api-aqui
+    
+    # Se usou outra API, coloque a variável correspondente
+    # NEXT_PUBLIC_API_URL=http://...
+    ```
+
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Acesse a aplicação:**
+    Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
